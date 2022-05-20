@@ -1,0 +1,16 @@
+f=open("m.txt",'r+')
+print("now enter your string")
+while(str!='@'):
+		str=input()
+		if(str!='@'):
+				f.write(str)
+x=input("Enter the string : ")
+c=int(input("enter the position : "))
+f.seek(c,0)
+n=f.tell()
+f.write(x)
+n1=f.tell()
+f.seek(0,0)
+str1=f.read()
+print(str1)
+f.close()
