@@ -1,0 +1,21 @@
+import numpy as np
+a=np.array([1,2,3,4,5])
+b=np.array([1,2,3,4,5])
+c=a==b
+print(all(c))
+print(any(c))
+d=a!=b
+print(all(d))
+print(any(d))
+e=a<=b
+print(all(e))
+print(any(e))
+f=a>=b
+print(all(f))
+print(any(f))
+g=a<b
+print(all(g))
+print(any(g))
+h=a>b
+print(all(h))
+print(any(h))
